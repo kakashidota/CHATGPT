@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log('API listening on port 3000');
 });
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html")
+})
